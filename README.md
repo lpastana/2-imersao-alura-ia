@@ -2,7 +2,7 @@
 
 Este projeto é um sistema de recomendação baseado em IA que utiliza o modelo LLM Gemini do Google para sugerir séries de TV com base nas preferências do usuário. Ele é projetado para demonstrar a integração de modelos avançados de IA em aplicações web usando Streamlit, proporcionando uma interface amigável para recomendações personalizadas.
 
-Para testar, acesse o meu [sistema de recomendação](link-para-o-sistema-recomendacao)
+Para testar, acesse o meu [sistema de recomendação](https://sistema-recomendacao-seriados-gemini.streamlit.app/)
 
 ## Índice
 
@@ -40,9 +40,9 @@ Para utilizar este sistema de recomendação, siga estes passos:
 pipenv run streamlit run main.py
 ```
 
-Para instruções detalhadas de uso, assista o vídeo em [Guia de Uso](link-para-guia-detalhado).
+Para instruções detalhadas de uso, assista o vídeo em [Guia de Uso](https://github.com/lpastana/2-imersao-alura-ia/blob/main/DEMO.webm).
 
-Não esqueça de baixar o arquivo EXCEL base para ser utilizado na ferramenta disponível [aqui](link-para-o-arquivo).
+Não esqueça de baixar o arquivo EXCEL base para ser utilizado na ferramenta disponível [aqui](https://github.com/lpastana/2-imersao-alura-ia/blob/main/exemplo.xlsx).
 
 ## Funcionalidades
 
