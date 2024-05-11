@@ -17,18 +17,18 @@ Para testar, acesse o meu [sistema de recomendação](link-para-o-sistema-recome
 
 Certifique-se de ter o Python 3.8 ou superior instalado. Siga os passos abaixo para configurar o ambiente:
 
-\`\`\`bash
+```bash
 git clone https://github.com/seu-usuario/2-imersao-alura-ia.git
 cd 2-imersao-alura-ia
 pip install pipenv
 pipenv install
-\`\`\`
+```
 
 Crie o arquivo \`.env\` na raiz do diretório do projeto e adicione sua chave da API do Google:
 
-\`\`\`plaintext
+```plaintext
 API-KEY=sua-chave-da-api-google
-\`\`\`
+```
 
 Nota: Lembre-se de substituir \`sua-chave-da-api-google\` pela sua chave real.
 
@@ -36,9 +36,9 @@ Nota: Lembre-se de substituir \`sua-chave-da-api-google\` pela sua chave real.
 
 Para utilizar este sistema de recomendação, siga estes passos:
 
-\`\`\`bash
+```bash
 pipenv run streamlit run main.py
-\`\`\`
+```
 
 Para instruções detalhadas de uso, assista o vídeo em [Guia de Uso](link-para-guia-detalhado).
 
