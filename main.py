@@ -4,6 +4,8 @@ import os
 import streamlit as st
 import pandas as pd
 import openpyxl
+from io import BytesIO
+
 
 
 
@@ -67,11 +69,25 @@ def initialize_session_state():
             config = json.load(f)
         print(config)
         st.session_state.chat = AI.AIManager(config)
-     
+def to_excel(df):
+    output = BytesIO()
+    writer = pd.ExcelWriter(output, engine='xlsxwriter')
+    df.to_excel(writer, index=False, sheet_name='Sheet1')
+    writer.close()
+    processed_data = output.getvalue()
+    return processed_data
+
 def main():
     data_json=""
     initialize_session_state()
     st.title('Sistema de Recomendação de Seriado - Google Gemini')
+    st.write("No link a seguir, você baixa o modelo de excel que poderá ser usado como exemplo. Baixe-o e atualize com suas séries favoritas!!")
+    st.download_button(
+    label="Download Excel",
+    data=to_excel(load_excel("exemplo.xlsx")),
+    file_name="examplo.xlsx",
+    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
 
     excel_file = st.file_uploader("Carregue seu arquivo Excel com todas as séries, notas e motivos que você já assistiu! Iremos sugerir novas séries para você maratonar!", type=['xlsx'])
     if excel_file:

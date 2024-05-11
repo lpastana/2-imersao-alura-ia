@@ -1,61 +1,65 @@
-# 2-imersao-alura-ia
+# 2-Imersão Alura IA
 
+Este projeto é um sistema de recomendação baseado em IA que utiliza o modelo LLM Gemini do Google para sugerir séries de TV com base nas preferências do usuário. Ele é projetado para demonstrar a integração de modelos avançados de IA em aplicações web usando Streamlit, proporcionando uma interface amigável para recomendações personalizadas.
 
-Esse projeto tem como objetivo criar um modelo de recomendação utilizando o modelo de AI LLM Gemini Google, hospedado no streamlit. 
-## Table of Contents
+Para testar, acesse o meu [sistema de recomendação](link-para-o-sistema-recomendacao)
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
+## Índice
 
-## Installation
-Para realizar a instalaç~do do projeto, siga os passos a seguir:
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Funcionalidades](#funcionalidades)
+- [Contribuições](#contribuições)
+- [Suporte](#suporte)
+- [Licença](#licença)
 
-1. Clone o  repositório na sua máquina local:
-    ```
-    git clone https://github.com/your-username/2-imersao-alura-ia.git
-    ```
+## Instalação
 
-2. Navege até o diretório do repositório
-    ```
-    cd 2-imersao-alura-ia
-    ```
+Certifique-se de ter o Python 3.8 ou superior instalado. Siga os passos abaixo para configurar o ambiente:
 
-3. Instale as dependencias do projeto usando o pipenv
-    ```
-    pip install pipenv
-    pipenv install
-    ```
+\`\`\`bash
+git clone https://github.com/seu-usuario/2-imersao-alura-ia.git
+cd 2-imersao-alura-ia
+pip install pipenv
+pipenv install
+\`\`\`
 
-4. Crie o arquivo `.env` na raiz do diretório do projeto e adicione sua chave da API do google:
-    ```
-    API-KEY=your-google-api-key
-    ```
+Crie o arquivo \`.env\` na raiz do diretório do projeto e adicione sua chave da API do Google:
 
+\`\`\`plaintext
+API-KEY=sua-chave-da-api-google
+\`\`\`
 
-    Nota: Lembre-se de trocar `your-google-api-key` pela sua chave atual.
+Nota: Lembre-se de substituir \`sua-chave-da-api-google\` pela sua chave real.
 
-## Utilizaç]ão
+## Uso
 
-para rodar o programa execute o comando abaixo:
+Para utilizar este sistema de recomendação, siga estes passos:
 
-  ```
-  pipenv run streamlit run main.py
-  ```
+\`\`\`bash
+pipenv run streamlit run main.py
+\`\`\`
 
-## Melhorias
+Para instruções detalhadas de uso, assista o vídeo em [Guia de Uso](link-para-guia-detalhado).
 
-Algumas melhorias mapeadas:
+Não esqueça de baixar o arquivo EXCEL base para ser utilizado na ferramenta disponível [aqui](link-para-o-arquivo).
 
- -Incluir imagem dos seriados sugeridos para melhor visualização
- -Permitir extrair a lista de sugestões, e integrar com sistemas de  gestão de episódios
+## Funcionalidades
+
+- Recomendações de séries em tempo real.
+- Interface web amigável.
+- Configurações de recomendação personalizáveis.
+- MAPEADO: Inclusão de imagens das séries sugeridas para melhor visualização.
+- MAPEADO: Possibilidade de extrair a lista de sugestões e integrar com sistemas de gestão de episódios.
 
 ## Contribuições
 
-Contribuições sao bem-vindas! Se você tem sugestões em como melhorar o projeto, por favor, submeta seu pull requestContributions are welcomed from everyone! If you have suggestions on how to improve this project, please fork the repository and submit a pull request.
+Contribuições são bem-vindas! Abra sua requisição que iremos analisar!
 
-## License
+## Suporte
 
-This project is licensed under the MIT License.
+Encontrou problemas? Mande e-mail para lucas.pastana@gmail.com
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.

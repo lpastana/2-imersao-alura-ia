@@ -10,6 +10,7 @@ streamlit = "*"
 pandas = "*"
 openpyxl = "*"
 tabulate = "*"
+xlsxwriter = "*"
 
 [dev-packages]
 
